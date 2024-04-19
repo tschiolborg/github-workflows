@@ -1,0 +1,14 @@
+name: test-labels
+
+on:
+  issues:
+    types:
+      - labeled
+
+jobs:
+  lol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run
+        run: echo Hello, world!
